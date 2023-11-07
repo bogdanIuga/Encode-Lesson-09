@@ -5,7 +5,7 @@ import { MyToken } from "../typechain-types";
 
 describe("Basic tests for understanding ERC20", async () => {
     async function deployContracts() {
-        const accounts = await ethers.getSigners();
+        const accounts = await ethers.getSigners();   
         const MyERC20ContractFactory = await ethers.getContractFactory(
             "MyToken"
         );
